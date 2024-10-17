@@ -1,0 +1,141 @@
+@{
+    ViewData["Title"] = "About Page";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/fonts/boxicons.css" />
+<script src="~/js/site.js"></script>
+
+<div class="about-header bg-main py-5 hero-header p-0">
+    <div class="container mt-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="~/img/Product.jpg">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="~/img/demo.jpg" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="~/img/card_1.jpg">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="~/img/Map.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="section-title ff-secondary text-start fw-normal">Về Xanh Đấu</h5>
+                <h1 class="mb-4">Chào Mừng Đến Với <i class="fa fa-leaf me-2"></i>Xanh Đấu</h1>
+                <p class="mb-4">Xanh Đấu là một trò chơi board game sáng tạo nhằm nâng cao nhận thức về biến đổi khí hậu và môi trường. Trong trò chơi, người chơi sẽ cùng nhau bảo vệ Trái Đất bằng cách xây dựng chiến lược và phát hiện những kẻ phá hoại đang âm thầm gây thiệt hại.</p>
+                <p id="moreAbout" class="mb-4 collapse">Trò chơi kết hợp những yếu tố của Ma Sói và Cờ Tỷ Phú, tạo nên một trải nghiệm thú vị vừa mang tính hợp tác, vừa đòi hỏi sự tinh ý và chiến lược để bảo vệ các khu vực sinh thái quan trọng trên bản đồ. Người chơi sẽ cùng nhau xây dựng chiến lược, thực hiện hành động bảo vệ môi trường và phải luôn cảnh giác với những kẻ phá hoại có thể xuất hiện bất cứ lúc nào.</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 mb-0" data-toggle="counter-up">12</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Tháng phát triển</p>
+                                <h6 class="text-uppercase mb-0">Sản phẩm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 mb-0" data-toggle="counter-up">5</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Thành viên</p>
+                                <h6 class="text-uppercase mb-0">Trong đội ngũ</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" data-bs-toggle="collapse" data-bs-target="#moreAbout">Tìm hiểu thêm</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-5 hero-header p-0">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5">Đội Ngũ Phát Triển</h1>
+            <p>Chúng tôi là một đội ngũ đam mê, mang đến những ý tưởng sáng tạo và cam kết bảo vệ môi trường thông qua trò chơi.</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <!-- Thành viên 1 -->
+            <div class="col-lg-2 col-md-6 wow fadeInUp mx-3" data-wow-delay="0.1s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="~/img/avatar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0">Mou Sa Ra Riêm</h5>
+                    <small>CEO</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 2 -->
+            <div class="col-lg-2 col-md-6 wow fadeInUp mx-3" data-wow-delay="0.2s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="~/img/avatar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0">Quốc Thái</h5>
+                    <small>CTO</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 3 -->
+            <div class="col-lg-2 col-md-6 wow fadeInUp mx-3" data-wow-delay="0.3s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="~/img/avatar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0">Thùy Mỵ</h5>
+                    <small>CMO</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 4 -->
+            <div class="col-lg-2 col-md-6 wow fadeInUp mx-3" data-wow-delay="0.4s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="~/img/avatar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0">Kim Chu</h5>
+                    <small>CFO</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 5 -->
+            <div class="col-lg-2 col-md-6 wow fadeInUp mx-3" data-wow-delay="0.5s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="~/img/avatar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0">Kiều Trân</h5>
+                    <small>COO</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

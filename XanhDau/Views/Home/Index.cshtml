@@ -1,0 +1,196 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/fonts/boxicons.css" />
+<script src="~/js/site.js"></script>
+
+<div class="bg-main py-5 hero-header p-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 animated slideInLeft">Xanh Đấu<br>Bảo Vệ Môi Trường Qua Từng Lượt Chơi</h1>
+                <p class="animated slideInLeft mb-4 pb-2">Khám phá trò chơi chiến thuật môi trường đầy thử thách, 
+                    nơi bạn vừa có thể học hỏi vừa bảo vệ hành tinh của chúng ta. Tham gia vào cuộc chiến giữa người bảo vệ 
+                    và kẻ phá hoại để giành lại sự cân bằng cho Trái Đất.</p>
+                <a asp-controller="Home" asp-action="About" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Tìm Hiểu Thêm</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                <img class="img-fluid animated-image" src="~/img/Product.jpg" alt="Hình ảnh Xanh Đấu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="advertisementSlider" class="bg-blue carousel slide hero-header" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#advertisementSlider" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#advertisementSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#advertisementSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-5 mx-5">Cùng Bảo Vệ Hành Tinh Xanh</h1>
+                        <p class="mb-4 pb-2 mx-5">Tham gia vào cuộc hành trình Xanh Đấu và nâng cao nhận thức về
+                            biến đổi khí hậu. Trải nghiệm cách hợp tác bảo vệ môi trường ngay hôm nay!</p>
+                        <a href="#" class="btn btn-danger py-sm-3 px-sm-5 me-3 mx-5">Khám Phá Ngay</a>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-center overflow-hidden">
+                        <img class="img-fluid move-right" src="~/img/slider_1.jpg" alt="Xanh Đấu - Bảo vệ hành tinh">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-5 mx-5">Học Hỏi và Chơi Để Bảo Vệ Môi Trường</h1>
+                        <p class="mb-4 pb-2 mx-5">Trò chơi board game Xanh Đấu không chỉ là giải trí, mà còn giúp
+                            bạn học hỏi về tác động của biến đổi khí hậu và cách bảo vệ môi trường một cách thú vị.</p>
+                        <a href="#" class="btn btn-danger py-sm-3 px-sm-5 me-3 mx-5">Bắt Đầu Chơi</a>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-center overflow-hidden">
+                        <img class="img-fluid  move-right" src="~/img/slider_2.jpg" alt="Xanh Đấu - Chơi để học hỏi">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-5 mx-5">Tham Gia Cộng Đồng Xanh Đấu</h1>
+                        <p class="mb-4 pb-2 mx-5">Hãy là một phần của cộng đồng cam kết bảo vệ môi trường. Tham
+                            gia các sự kiện, chia sẻ kinh nghiệm, và cùng nhau tạo nên những thay đổi tích cực.</p>
+                        <a href="#" class="btn btn-danger py-sm-3 px-sm-5 me-3 mx-5">Tham Gia Ngay</a>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-center overflow-hidden">
+                        <img class="img-fluid  move-right" src="~/img/slider_3.jpg" alt="Xanh Đấu - Cộng đồng xanh">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút Previous -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#advertisementSlider" data-bs-slide="prev">
+        <span class="custom-prev" aria-hidden="true">&lt;</span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <!-- Nút Next -->
+    <button class="carousel-control-next" type="button" data-bs-target="#advertisementSlider" data-bs-slide="next">
+        <span class="custom-next" aria-hidden="true">&gt;</span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<div class="home-body bg-main py-5 hero-header">
+    <div class="container my-5">
+        <div class="home-body-info row align-items-center g-5 mt-5">
+            <div class="col-lg-6 text-lg-start">
+                <div class="image-gallery bg-danger">
+                    <img class="img-fluid tilted" src="~/img/card_1.jpg" alt="Hình ảnh sản phẩm 1">
+                    <img class="img-fluid tilted" src="~/img/demo.jpg" alt="Hình ảnh sản phẩm 2">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-3">Xanh Đấu - Trò Chơi Bảo Vệ Môi Trường</h1>
+                <p>Xanh Đấu không chỉ là một board game; nó là một cuộc hành trình đầy thử thách, nơi bạn sẽ nhập vai
+                    thành những người hùng bảo vệ môi trường hoặc kẻ phá hoại. Với mỗi lượt chơi, bạn sẽ được trải nghiệm
+                    những câu chuyện thú vị, học hỏi về biến đổi khí hậu, và cùng nhau tìm cách bảo vệ hành tinh của
+                    chúng ta. Tham gia ngay hôm nay để trở thành một phần của phong trào bảo vệ môi trường!</p>
+                <a asp-controller="Home" asp-action="Product" class="btn btn-primary float-end">Mua Ngay</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Phần phản hồi người dùng -->
+<div id="testimonialCarousel" class="bg-main carousel slide hero-header py-3" data-bs-ride="carousel">
+    <h2 class="text-center mb-4">Phản hồi của người dùng</h2>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item mt-4 active">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="testimonial">
+                        <img src="~/img/avatar.jpg" alt="Avatar" class="rounded-circle mb-3"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-1">Nguyễn Văn A</h5>
+                        <p class="text-muted">Học Sinh Trung Học</p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Xanh Đấu không chỉ giúp tôi vui vẻ trong những giờ chơi, mà còn dạy tôi<br>
+                                nhiều điều về bảo vệ môi trường. Một trải nghiệm tuyệt vời!"</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item mt-4">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="testimonial">
+                        <img src="~/img/avatar.jpg" alt="Avatar" class="rounded-circle mb-3"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-1">Trần Thị B</h5>
+                        <p class="text-muted">Giáo Viên</p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Trò chơi rất hấp dẫn! Tôi đã sử dụng Xanh Đấu trong lớp học và học<br>
+                                sinh rất thích thú. Nó thực sự giúp các em nhận thức rõ hơn về vấn đề môi trường."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item mt-4">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="testimonial">
+                        <img src="~/img/avatar.jpg" alt="Avatar" class="rounded-circle mb-3"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-1">Lê Văn C</h5>
+                        <p class="text-muted">Sinh Viên Đại Học</p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Xanh Đấu là một trò chơi không thể thiếu trong các buổi họp mặt bạn<br>
+                                bè. Chúng tôi đã có những giây phút vui vẻ và học hỏi rất nhiều từ nó!"</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Các nút điều khiển -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - XanhDau</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/XanhDau.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-menu navbar navbar-expand-sm navbar-light border-bottom box-shadow">
+            <div class="container-fluid">
+                <!-- Logo nằm bên trái -->
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">XanhDau</a>
+
+                <!-- Nút toggle khi ở kích thước nhỏ -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Danh sách thẻ li nằm bên phải -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid main-content p-0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top text-muted bg-green">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-white fw-normal mb-4">Giới thiệu</h4>
+                    <ul>
+                        <li>
+                            <a class="btn btn-link" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-white fw-normal">Thông tin liên hệ</h4>
+                    <p class="text-white"><i class='bx bxs-map'></i> Cần Thơ, Việt Nam</p>
+                    <p class="text-white"><i class='bx bxs-phone'></i> +012 345 67890</p>
+                    <p class="text-white"><i class='bx bxl-gmail'></i> info@xanhdauboardgame.com</p>
+                    <div class="d-flex">
+                        <a class="btn btn-social text-white" href="#"><i class='bx bxl-twitter'></i></a>
+                        <a class="btn btn-social text-white" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-white fw-normal">Đăng ký nhận tin</h4>
+                    <p class="text-white">Hãy đăng ký để nhận thông tin mới nhất về sản phẩm và sự kiện của chúng tôi!</p>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Nhập email của bạn" required>
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

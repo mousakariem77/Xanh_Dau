@@ -1,0 +1,134 @@
+@{
+    ViewData["Title"] = "Product Page";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/fonts/boxicons.css" />
+<script src="~/js/site.js"></script>
+
+<div class="bg-main py-5 hero-header p-0">
+    <div class="container">
+        <div class="product-page">
+            <div class="product-details">
+                <!-- Hình ảnh sản phẩm -->
+                <div class="product-images">
+                    <img id="main-image" src="/img/Product.jpg" alt="Xanh Đấu - Board Game">
+                    <div class="thumbnail-slider">
+                        <button id="prev">&#10094;</button>
+                        <div class="thumbnail-images">
+                            <img class="px-1" src="/img/Product.jpg" alt="Thumbnail 1" data-src="/img/Product.jpg">
+                            <img class="px-1" src="/img/demo.jpg" alt="Thumbnail 2" data-src="/img/demo.jpg">
+                            <img class="px-1" src="/img/card_1.jpg" alt="Thumbnail 3" data-src="/img/card_1.jpg">
+                            <img class="px-1" src="/img/Map.jpg" alt="Thumbnail 2" data-src="/img/Map.jpg">
+                        </div>
+                        <button id="next">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="product-info px-5 mt-5">
+                    <h1>Xanh Đấu - Board Game</h1>
+                    <p>Một trò chơi thú vị về môi trường giúp nâng cao nhận thức
+                        và tư duy chiến lược.</p>
+                    <h2 class="product-price">100.000 VND</h2>
+                    <p><strong>Độ tuổi:</strong> Từ 12+</p>
+                    <p><strong>Người chơi:</strong> 4+</p>
+                    <p class="mt-4"><strong>Ngôn ngữ:</strong> <select>
+                            <option value="Vietnamese">Phiên bản Tiếng Việt</option>
+                            <option value="English">Phiên bản Tiếng Anh</option>
+                        </select></p>
+                    <div class="quantity mt-4 mb-3">
+                        <label for="quantity">Số lượng:</label>
+                        <button onclick="decreaseQuantity()" class="btn btn-secondary">-</button>
+                        <input type="number" id="quantity" value="1" min="1" class="form-control quantity-input">
+                        <button onclick="increaseQuantity()" class="btn btn-secondary">+</button>
+                    </div>
+                    <button class="btn add-to-cart mt-4">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue py-5 hero-header p-0">
+    <div class="container">
+         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5">Thông Tin Sản Phẩm</h1>
+            <p>Khám phá chi tiết về trò chơi Xanh Đấu, một trải nghiệm thú vị giúp nâng cao nhận thức về bảo vệ môi trường.</p>
+        </div>
+
+        <!-- Phần Video Giới Thiệu Sản Phẩm -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                <p class="mt-3 text-center">
+                    Hãy xem video này để tìm hiểu cách chơi Xanh Đấu và những lợi ích mà trò chơi mang lại cho người chơi. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-5 hero-header p-0">
+    <div class="container">
+        <div class="question_header">
+            <h1 class="title">Những Câu Hỏi Thường Gặp</h1>
+        </div>
+        
+        <div class="questions_container">
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    1. Trò chơi này dành cho bao nhiêu người?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Trò chơi Xanh Đấu có thể chơi từ 2 người trở lên.</p>
+                </div>
+            </div>
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    2. Thời gian chơi trung bình là bao lâu?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Thời gian chơi trung bình khoảng 30 phút.</p>
+                </div>
+            </div>
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    3. Có phiên bản nào khác ngoài tiếng Việt không?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Có, chúng tôi cung cấp phiên bản tiếng Anh cho trò chơi này.</p>
+                </div>
+            </div>
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    4. Làm thế nào để đặt hàng trò chơi?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Bạn có thể đặt hàng trực tuyến qua trang web của chúng tôi hoặc liên hệ với chúng tôi qua số điện thoại.</p>
+                </div>
+            </div>
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    5. Trò chơi có an toàn cho trẻ em không?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Có, trò chơi được thiết kế an toàn và phù hợp cho trẻ em từ 12 tuổi trở lên.</p>
+                </div>
+            </div>
+            <div class="question_item circular">
+                <div class="question_title" onclick="toggleAnswer(this)">
+                    6. Có bao nhiêu đánh giá về trò chơi này?
+                    <span class="toggle_icon">+</span>
+                </div>
+                <div class="question_answer">
+                    <p>Trò chơi đã nhận được ⭐⭐⭐⭐⭐ từ 58 đánh giá.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
